@@ -1,5 +1,4 @@
 const express = require("express")
-const cors = require("cors");
 const multer = require("multer")
 const bcrypt = require("bcrypt");
 const { connectdb } = require("./config/db.js");
@@ -21,16 +20,11 @@ const PORT = process.env.PORT
 
 const upload = multer({ dest: "uploads" })
 app.use(express.urlencoded({extended:true}));
-app.set("view engine", "ejs")
 app.use(express.json());
-app.use(cors());
 
 
 // Routes
 
-app.get('/', (req, res) => {
-    res.render("index")
-})
 app.use('/api/files', fileRouter);
 app.use('/api/user',userRouter);
 
