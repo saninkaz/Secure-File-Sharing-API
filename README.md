@@ -28,14 +28,15 @@ This API provides a secure file-sharing service with features such as file uploa
 - #### Register a User
 
     Endpoint: POST api/users/register
-
+      
       Request Body:
-
+      ```json
       {
       "name": "Arun",
       "email": "arun123@example.com",
       "password": "test1234"
       }
+      ```
 
       Response:
 
