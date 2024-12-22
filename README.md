@@ -1,4 +1,4 @@
-﻿# Secure File Sharing API
+﻿# Secure File Sharing System
 
 ## Overview
 
