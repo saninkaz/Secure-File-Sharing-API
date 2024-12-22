@@ -29,16 +29,14 @@ This API provides a secure file-sharing service with features such as file uploa
 
     Endpoint: POST api/users/register
 
-  Request body:
+      Request body:
   
-  ```json
-  {
-  "name": "Arun",
-  "email": "arun123@example.com",
-   "password": "test1234"
-  }
-  ```
-
+      {
+      "name": "Arun",
+      "email": "arun123@example.com",
+      "password": "test1234"
+      }
+  
       Response:
 
       success: {success:true,token}
@@ -49,12 +47,11 @@ This API provides a secure file-sharing service with features such as file uploa
   Endpoint: POST api/users/login
 
       Request Body:
-      ```json
+  
       {
       "email": "arun123@example.com",
       "password": "test1234"
       }
-      ```
 
       Response:
 
@@ -76,13 +73,11 @@ This API provides a secure file-sharing service with features such as file uploa
       File (binary data)
 
       Metadata:
-      ```json
       {
        "expiry": 24, // in hours
        "maxDownloads": 5,
        "password": "test1234" //optional
       }
-      ```
 
       Response:
 
@@ -98,11 +93,10 @@ This API provides a secure file-sharing service with features such as file uploa
   Authorization: Bearer <JWT>
 
       Request Body:
-      ```json
+  
       {
       "password": "test1234"
       }
-      ```
 
       Response:
 
@@ -135,11 +129,9 @@ This API provides a secure file-sharing service with features such as file uploa
       File (binary data)
 
       Metadata:
-      ```json
       {
       "password": "test1234"
       }
-      ```
 
       Response:
 
