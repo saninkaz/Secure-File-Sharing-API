@@ -29,7 +29,6 @@ This API provides a secure file-sharing service with features such as file uploa
 
     Endpoint: POST api/users/register
       
-      Request Body:
       ```json
       {
       "name": "Arun",
